@@ -1,502 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/485438f9b9.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="images/fav-icons/home-fav-icon.jpg" type="image/x-icon">
-    
-    <title>Bant Kupatila | Home </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/485438f9b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bank Kupatlia | Home</title>
     <style>
+      * {
+        font-family: "Neue Haas Unica";
+      }
 
-        *{
-            font-family: 'Neue Haas Unica';
+      ::-webkit-scrollbar {
+        width: 0;
+      }
 
-        }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
 
-        ::-webkit-scrollbar {
-    width: 0;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-}
+      ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+      }
 
       .activatedPage {
-        color: #ED1B23;
+        color: #ed1b23;
         font-weight: 700;
       }
 
       .header-h1 {
-text-shadow: 0 4px 4px #00000040 ;
+        text-shadow: 0 4px 4px #de3f3f40;
       }
     </style>
-</head>
-<body>
-<header>
-
-    <!-- ----------NAVIGATION---------- -->
-
-    <nav class="px-[4.375rem] py-4">
+  </head>
+  <body>
+    <header>
+      <nav class="bg-red-300 px-[4.375rem] py-3.5">
         <div class="grid grid-cols-5 items-center">
+          <div class="logo">
+            <img src="/images/logos/header-logo.png" alt="" />
+          </div>
+          <ul class="col-span-2 flex gap-4">
+            <li><a href="#">home</a></li>
+            <li class=""><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">products</a></li>
+          </ul>
 
-            <img src="images/logos/header-logo.png" alt="Logo">
-            
-            <ul class="flex gap-16 col-span-2 text-[#383751]">
-                <li class="activatedPage"><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            
-            <div class=" flex justify-end gap-4 items-center col-span-2">
-                <input type="text" placeholder="Search Store" class="text-sm text-[#6C6B80] border border-[#d1d1db] rounded-lg w-2/4 py-1 px-2">
-                <div class="flex justify-center items-center gap-1">
-                <img src="images/icons/header-country-flag.png" alt="Country Flag" class="">
-                <i class="fa-solid fa-angle-down"></i>
+          <div class="flex justify-end gap-4 col-span-2">
+            <input
+              type="text"
+              placeholder="Search Store"
+              class="text-sm rounded-lg border-[#d1d1db]"
+            />
+            <div class="">
+              <img src="/images/icons/header-country-flag.png" alt="" />
             </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="bg-[url('images/backgrounds/header-background.png')] bg-cover py-32 px-11"
+      >
+        <div
+          class="m-11 bg-[#ed1b22d2] py-8 px-8 flex flex-col gap-y-5 max-w-[45rem] max-h-[40rem]"
+        >
+          <span
+            class="text-white text-[2.5rem] leading-[50px] font-extrabold"
+            style="display: inline"
+            >WELCOME TO THE WORLD OF LUXURY</span
+          >
+          <p class="text-xl font-light text-[#F9F9FB]" style="display: inline">
+            Bant d.o.o. company was founded in 1994. and is leading company for
+            decoration of your living space.
+          </p>
+          <button
+            class="bg-white text-[#ED1B23] font-bold w-20 h-12 rounded-sm ml-2"
+          >
+            shop now
+          </button>
+        </div>
+      </header>
+    <div class="">
+          <img src="images/extra-images/header-end-image.png" alt="" class="absolute -z-10 -translate-y-14"/>
+        </div> 
+
+          <h1 class="text-4xl font-bold text-black text-center mt-32 mb-11">
+            Our Categories
+          </h1>
+
+          <div class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-40 my-8 border border-[#e5e5eb]">
+             <div class="flex flex-col col-span-1 gap-3.5 py-8 items-center border border-[#e5e5eb]]">
+              <img src="images/icons/bathroom-faucets.png" alt="">
+              <span>Bathroom Faucets</span>
             </div>
-        </div>
-    </nav>
-
-    <!-- ----------HEADER CONTENT---------- -->
-
-    <section class="bg-[url('images/backgrounds/header-background.png')] bg-cover py-[7.875rem] px-16">
-        <div class="bg-[#ed1b22d2] flex flex-col gap-y-6 p-7 max-w-[40rem]">
-            <h1 class="text-5xl font-extrabold text-[#F9F9FB] leading-[56px] header-h1">Welcome to the World of Style and Luxury</h1>
-            <p class="text-xl font-light text-[#F9F9FB]">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space.</p>
-            <button class="font-bold text-[#ED1B23] bg-white w-44 h-14"><a href="#">Buy Now</a></button>
-        </div>
-    </section> 
-</header>
-
-<img src="images/extra-images/header-end-image.png" alt="" class="absolute -z-10 -translate-y-14">
-
-
-    <!-- ----------OUR CATEGORIES---------- -->
-
-<section class="px-28">
-<h1 class="text-4xl font-bold text-[#121127] text-center mt-32 mb-11">Our Categories</h1>
-
-<div class="grid xl:grid-cols-4 xl:grid-rows-3 lg:grid-cols-3 lg:grid-rows-4 md:grid-cols-2 md:grid-rows-6 border border-[#E5E5EB]">
-
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/bathroom-faucets.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Bathroom Faucets</p>
-    </div>
-    
- 
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/sink.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Sink</p>
-    </div>
- 
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/bathroom-furniture.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Bathroom Furniture</p>
-    </div>
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/tubs.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Tubs</p>
-    </div>
- 
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/mirrors.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Mirrors</p>
-    </div>
- 
-        <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/toilet-shells.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Toilet shells</p>
-    </div>
-    
- 
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/haberdashery.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Haberdashery</p>
-    </div>
- 
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/shower-pipes-and-tubs.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Shower pipes and tubs</p>
-    </div>
- 
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/shower-cabins.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Shower cabins</p>
-    </div>
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/kettles-and-buttons.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Kettles and buttons</p>
-    </div>
-    
- 
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/swimming-pools.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Swimming pools</p>
-    </div>
- 
-    
-    <div class="flex flex-col items-center gap-3.5 border border-[#E5E5EB] py-9">
-    <img src="images/icons/ceramics.png" alt="Bathroom Faucets" class="">
-    <p class="text-xl text-[#383751]">Ceramics</p>
-    </div>
-
-</div>
-
-<div class="grid xl:grid-cols-2 grid-cols-1 gap-4 my-8 ">
-
-    <div class="flex gap-4 border-2 border-[#E5E5EB] p-4">
-        <img src="images/icons/our-catalog-image.png" alt="Our Catalog">
-        <div class="col-span-3">
-        <h3 class="text-xl text-[#383751]">Our Catalog</h3>
-        <p class="text-[13px] text-[#6C6B80] mt-2">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space.</p>
-        <button class="text-[13px] bg-[#ED1B23] text-white w-32 h-9 mt-2"><a href="#">Download</a></button>
-        </div>
-    </div>
-
-    <div class="flex gap-4 border-2 border-[#E5E5EB] p-4">
-        <img src="images/icons/outlet-image.png" alt="Our Catalog">
-        <div class="col-span-3">
-        <h3 class="text-xl text-[#383751]">Outlet</h3>
-        <p class="text-[13px] text-[#6C6B80] mt-2">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space.</p>
-        <button class="text-[13px] bg-[#ED1B23] text-white w-32 h-9 mt-2"><a href="#">Download</a></button>
-        </div>
-    </div>
-
-</div>
-
-<div class="grid grid-cols-2 gap-4">
-
-    <div class="bg-[url('images/backgrounds/our-categories-sink-image.png')] bg-center p-4 h-[25.6875rem]">
-        <div class="flex flex-col justify-end h-full">
-            <h1 class="text-[2rem] font-bold text-[#F9F9FB] leading-9 drop-shadow-lg">Welcome to the world of Style and Luxury</h1>
-            <button class="text-base font-bold text-[#ED1B23] mt-4 py-3.5 px-[3.75rem] w-[13.5rem] h-[3.25rem] bg-white"><a href="#">Explore Now</a></button>
-        </div>
-    </div>
-
-
-    <div class="bg-[url('images/backgrounds/our-categories-tub-image.png')] bg-center p-4 h-[25.6875rem]">
-        <div class="flex flex-col justify-end h-full">
-            <h1 class="text-[2rem] font-bold text-[#F9F9FB] leading-9 drop-shadow-lg">Welcome to the world of Style and Luxury</h1>
-            <button class="text-base font-bold text-[#ED1B23] mt-4 py-3.5 px-[3.75rem] w-[13.5rem] h-[3.25rem] bg-white"><a href="#">Explore Now</a></button>
-        </div>
-    </div>
-
-</div>
-
-</section>
-
-<!-- ----------INTERMISSION---------- -->
-
-<div class="bg-[url('images/backgrounds/intermission-background.png')] bg-cover bg-center my-28 h-[37rem]">
-    <div class="flex justify-end items-center h-full">
-        <div class="max-w-2xl">
-            <h1 class="text-5xl font-extrabold text-[#F9F9FB] leading-[56px] header-h1">Welcome to the World of Style and Luxury</h1>
-            <p class="text-xl font-light text-[#F9F9FB] my-4">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space.</p>
-            <button class="font-bold text-white bg-[#ED1B23] w-44 h-14"><a href="#">Buy Now</a></button>
-        </div>
-    </div>  `
-</div>
-
-<!-- ----------TRENDING PRODUCTS---------- -->
-
-<section class="px-16">
-    <div class="flex justify-between items-center mb-8">
-        <h1 class="text-4xl font-bold text-[#121127]">Trending Products</h1>
-        <div class="flex gap-2">
-            <div class="text-white bg-[#FCA5A5] p-3.5"> 
-                <svg width="18" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.08984 16.9201L1.56984 10.4001C0.799843 9.63008 0.799843 8.37008 1.56984 7.60008L8.08984 1.08008" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/bathroom-furniture.png" alt=""> 
+              <span>Bathroom Furniture</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/ceramics.png" alt=""> 
+              <span>Ceramics</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/haberdashery.png" alt=""> 
+              <span>haberdashery</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/kettles-and-buttons.png" alt=""> 
+              <span>Kettles and Buttons</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/mirrors.png" alt=""> 
+              <span>Mirrors</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/shower-cabins.png" alt=""> 
+              <span>Shower Cabins</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/shower-pipes-and-tubs.png" alt=""> 
+              <span>Shower pipes and tubs</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/sink.png" alt=""> 
+              <span>Sink</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/swimming-pools.png" alt=""> 
+              <span>Swimming pools</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/toilet-shells.png" alt=""> 
+              <span>Toilets Shells</span>
+             </div>
+             <div class="flex flex-col gap-3.5 py-8 col-span-1 items-center border border-[#e5e5eb]">
+              <img src="images/icons/tubs.png" alt=""> 
+              <span>Tubs</span>
+             </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 border border-[#e5e5eb] mx-40 mt-8">
+            <div class="flex flex-col sm:flex-row gap-3 border border-[#e5e5eb] items-center p-6">
+              <img src="images/icons/our-catalog-image.png" alt="">
+              <div class="">
+               <p class="text-xl">Our Catalog</p>
+               <span class="text-sm font-light  text-[#6C6B80]">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space</span>
+               <button class="bg-red-600 py-1 px-2 text-white block">Download</button>
+              </div>
             </div>
-            <div class="text-white bg-[#FCA5A5] p-3.5">
-                <svg width="18" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.910156 16.9201L7.43016 10.4001C8.20016 9.63008 8.20016 8.37008 7.43016 7.60008L0.910156 1.08008" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
+            <div class="flex flex-col sm:flex-row gap-3 border border-[#e5e5eb] items-center p-6">
+              <img src="images/icons/outlet-image.png" alt="">
+              <div class="">
+                <p class="text-xl">Outlet</p>
+                <span class="text-sm font-light text-[#6C6B80]">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space</span>
+                <button class="bg-red-600 py-1 text-white px-2 block sm:bg">Download</button>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-
-    <div class="grid grid-cols-4 grid-rows-1 gap-6  ">
-
-        <div class=" row-span-2">
-            <img src="images/products/trending products-item1.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
+          <div class="grid grid-cols-2 mx-40 mt-8 sm:gap-4 gap-[1px] h-[25.685rem]">
+            <div class="bg-[url('images/backgrounds/our-categories-sink-image.png')] bg-cover bg-center p-1 sm:p-4 flex gap-4 flex-col justify-end">
+                <p class="text-white font-bold sm:text-2xl text-xl">Welcome to the world of style and luxury</p>
+                <button class="bg-white text-red-600 sm:py-4 sm:px-8 p-1 max-w-[15rem]">Explore Now</button>
+              </div>
+            <div class="bg-[url('images/backgrounds/our-categories-tub-image.png')] bg-cover bg-center p-1 sm:p-4 flex gap-4 flex-col justify-end">
+              <p class="text-white font-bold sm:text-2xl text-xl">Welcome to the world of style and luxury</p>
+              <button class="bg-white text-red-600 sm:py-4 sm:px-8 p-1 max-w-[15rem]">Explore Now</button>
             </div>
-        </div>
-
-        <div class="">
-            <img src="images/products/trending-products-item2.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
+          </div>
+          
+          <div class="bg-[url('images/backgrounds/header-background.png')] bg-cover pt-40 pb-10 px-10 mt-10">
+            <div class="flex justify-end items-center">
+            <div class="flex flex-col gap-3.5 max-w-[40rem]">
+            <p class="text-5xl text-white font-bold">Welcome to the world of style and luxury</p>
+            <span class="text-white font-light">Bant d.o.o. company was founded in 1994. and is leading company for
+              decoration of your living space</span>
+            <button class="text-white bg-red-600 px-8 py-4 max-w-[14rem]">But Now</button>
             </div>
-        </div>
+           </div>
+          </div>
 
-        <div class="">
-            <img src="images/products/trending-products-item3.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
-            </div>
-        </div>
-
-        <div class="">
-            <img src="images/products/trending-products-item4.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
-            </div>
-        </div>
-
-        <div class="col-span-2">
-            <img src="images/products/trending-products-item5.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
-            </div>
-        </div>
-
-        <div class="">
-            <img src="images/products/trending-products-item6.png" alt="item1">
-            <div class="mt-4">
-                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
-                <p class="text-xl text-[#9D9CAF]">Starting from <span class="text-xl font-bold text-[#ED1B23]">$200.00</span></p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ----------BANDS WE OFFER---------- -->
-
-<section class="bg-[#F9F9FB] mt-24 py-24">
-
-<h2 class="text-4xl font-bold text-[#121127] text-center">Brands We Offer</h2>
-
-<div class="grid grid-cols-9 grid-rows-2 gap-6 mt-12">
-
-        <img src="images/brands/brand-col1-row1.png" alt="Brand-1" class="">
-        <img src="images/brands/brand-col2-row1.png" alt="Brand-2" class="col-span-2">
-        <img src="images/brands/brand-col3-row1.png" alt="Brand-3" class="col-span-2">
-        <img src="images/brands/brand-col4-row1.png" alt="Brand-4" class="col-span-2">
-        <img src="images/brands/brand-col5-row1.png" alt="Brand-5" class="col-span-2">
-        <img src="images/brands/brand-col1-row2.png" alt="Brand-6" class="col-span-2">
-        <img src="images/brands/brand-col2-row2.png" alt="Brand-7" class="col-span-2">
-        <img src="images/brands/brand-col3-row2.png" alt="Brand-8" class="col-span-2">
-        <img src="images/brands/brand-col4-row2.png" alt="Brand-9" class="col-span-2">
-        <img src="images/brands/brand-col5-row2.png" alt="Brand-10" class="">
-   
-</div>
-
-</section>
-
-<!-- ----------WHAT OUR USER SAYS ABOUT US---------- -->
-
-<section class="py-20"> 
-
-    <div class="flex justify-center my-8">
-        <h2 class="text-4xl font-bold text-[#121127] text-center max-w-sm">What our user say about us</h2>
-    </div>
-
-<div class="flex gap-4 mx-16">
-
-
-    <div class="px-6 py-8 rounded-lg hover:shadow-xl duration-300">
-        <div class="flex items-center gap-4">
-            <img src="images/users/user-pfp.png" alt="User">
+          <div class="flex justify-between mx-32 mt-16">
             <div>
-                <h6 class="text-base font-medium text-[#ED1B23]">Ernest Smith</h6>
-                <p class="text-[15px] text-[#9D9CAF]">CEO at Ritmo</p>
+              <p class="text-black text-3xl font-bold"  >Trending Products</p>
             </div>
-        </div>
-        <p class="text-[15px] text-[#9D9CAF] my-4">They are a partner with expertise in making trade shows effective.and they know what will be best</p>
-        <div class="flex items-center gap-4">
-            <p class="text-[15px] font-medium text-[#FF8127]">5.0</p>
-            <div class="flex gap-1">
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
+            <div class="flex justify-between gap-2">
+              <div class="bg-red-300 p-4 text-white">
+                <svg
+                width="18"
+                height="18"
+                viewBox="0 0 9 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.08984 16.9201L1.56984 10.4001C0.799843 9.63008 0.799843 8.37008 1.56984 7.60008L8.08984 1.08008"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              </div>
+              <div class="bg-red-300 p-4 text-white">
+                <svg
+                width="18"
+                height="18"
+                viewBox="0 0 9 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.910156 16.9201L7.43016 10.4001C8.20016 9.63008 8.20016 8.37008 7.43016 7.60008L0.910156 1.08008"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-    <div class="px-6 py-8 rounded-lg hover:shadow-xl duration-300">
-        <div class="flex items-center gap-4">
-            <img src="images/users/user-pfp.png" alt="User">
-            <div>
-                <h6 class="text-base font-medium text-[#ED1B23]">Ernest Smith</h6>
-                <p class="text-[15px] text-[#9D9CAF]">CEO at Ritmo</p>
+          <div class="sm:grid sm:grid-cols-4 sm:grid-rows-1 mx-32 mt-6 gap-4 flex flex-col">
+            <div class="row-span-2 h-[100%]">
+              <img src="images/products/trending products-item1.png" alt="item1" />
+              <div class="mt-4">
+                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                <p class="text-xl text-[#9D9CAF]">
+                  Starting from
+                  <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                </p>
+              </div>
             </div>
-        </div>
-        <p class="text-[15px] text-[#9D9CAF] my-4">They are a partner with expertise in making trade shows effective.and they know what will be best</p>
-        <div class="flex items-center gap-4">
-            <p class="text-[15px] font-medium text-[#FF8127]">5.0</p>
-            <div class="flex gap-1">
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
+            <div class="">
+              <img src="images/products/trending-products-item2.png" alt="item1" />
+              <div class="mt-4">
+                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                <p class="text-xl text-[#9D9CAF]">
+                  Starting from
+                  <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="px-6 py-8 rounded-lg hover:shadow-xl duration-300">
-        <div class="flex items-center gap-4">
-            <img src="images/users/user-pfp.png" alt="User">
-            <div>
-                <h6 class="text-base font-medium text-[#ED1B23]">Ernest Smith</h6>
-                <p class="text-[15px] text-[#9D9CAF]">CEO at Ritmo</p>
+            <div class="">
+              <img src="images/products/trending-products-item3.png" alt="item1" />
+              <div class="mt-4">
+                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                <p class="text-xl text-[#9D9CAF]">
+                  Starting from
+                  <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                </p>
+              </div>
             </div>
-        </div>
-        <p class="text-[15px] text-[#9D9CAF] my-4">They are a partner with expertise in making trade shows effective.and they know what will be best</p>
-        <div class="flex items-center gap-4">
-            <p class="text-[15px] font-medium text-[#FF8127]">5.0</p>
-            <div class="flex gap-1">
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
+            <div class="">
+              <img src="images/products/trending-products-item4.png" alt="item1" />
+              <div class="mt-4">
+                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                <p class="text-xl text-[#9D9CAF]">
+                  Starting from
+                  <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
+            <div class="col-span-2"> <img src="images/products/trending-products-item5.png" alt="item1" />
+              <div class="mt-4">
+                <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                <p class="text-xl text-[#9D9CAF]">
+                  Starting from
+                  <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                </p>
+              </div>
+              </div>
 
-    <div class="px-6 py-8  rounded-lg hover:shadow-xl duration-300">
-        <div class="flex items-center gap-4">
-            <img src="images/users/user-pfp.png" alt="User">
-            <div>
-                <h6 class="text-base font-medium text-[#ED1B23]">Ernest Smith</h6>
-                <p class="text-[15px] text-[#9D9CAF]">CEO at Ritmo</p>
+               <div class="">
+                <img src="images/products/trending-products-item6.png" alt="item1" />
+                <div class="mt-4">
+                  <h6 class="text-xl font-bold text-[#383751]">Minimalist Chair</h6>
+                  <p class="text-xl text-[#9D9CAF]">
+                    Starting from
+                    <span class="text-xl font-bold text-[#ED1B23]">$200.00</span>
+                  </p>
+                </div>
+               </div>
+          </div>
+
+          <div class="bg-[#F9F9FB] flex flex-col items-center py-16 mt-14">
+            <p class="text-2xl">Brands We Offer</p>
+            <div class="grid grid-rows-2 grid-cols-9 gap-3.5">
+              <img src="images/brands/brand-col1-row1.png" alt="Brand-1" class="" />
+              <img
+                src="images/brands/brand-col2-row1.png"
+                alt="Brand-2"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col3-row1.png"
+                alt="Brand-3"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col4-row1.png"
+                alt="Brand-4"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col5-row1.png"
+                alt="Brand-5"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col1-row2.png"
+                alt="Brand-6"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col2-row2.png"
+                alt="Brand-7"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col3-row2.png"
+                alt="Brand-8"
+                class="col-span-2"
+              />
+              <img
+                src="images/brands/brand-col4-row2.png"
+                alt="Brand-9"
+                class="col-span-2"
+              />
+              <img src="images/brands/brand-col5-row2.png" alt="Brand-10" class="" />
+                </div>
+          </div>
+
+
+          <div class="items-center mt-16 mx-40">
+            <div class="text-center my-12">
+            <p class="text-4xl font-bold">What our users say about us</p>
             </div>
-        </div>
-        <p class="text-[15px] text-[#9D9CAF] my-4">They are a partner with expertise in making trade shows effective.and they know what will be best</p>
-        <div class="flex items-center gap-4">
-            <p class="text-[15px] font-medium text-[#FF8127]">5.0</p>
-            <div class="flex gap-1">
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
-                <i class="fa-solid fa-star text-sm" style="color: #ff8127;"></i>
+               
+            <div class="sm:flex-row sm:justify-between flex flex-col gap-3.5">
+            <div class="flex flex-col gap-3.5 max-w-[13rem]">
+                <div class="flex gap-3.5">
+                  <img src="images/users/user-pfp.png" 
+                  alt="">
+                  <div>
+                    <p class="text-[#ED1B23]">Ernest Smith</p>
+                    <p class="text-[#9D9CAF]">CEO at Ritmo</p>
+                  </div>
+                </div>
+                <p class="text-[#9D9CAF]">They are a partner with
+                  expertise in making trade
+                  shows effective.and they
+                  know what will be best
+                  </p>
+                <p class="text-[#FF8127]">5.0</p>
+              </div>
+
+              <div class="flex flex-col gap-3.5 max-w-[13rem]">
+                <div class="flex gap-3.5">
+                  <img src="images/users/user-pfp.png" 
+                  alt="">
+                  <div>
+                    <p class="text-[#ED1B23]">Ernest Smith</p>
+                    <p class="text-[#9D9CAF]">CEO at Ritmo</p>
+                  </div>
+                </div>
+                <p class="text-[#9D9CAF]">They are a partner with
+                  expertise in making trade
+                  shows effective.and they
+                  know what will be best
+                  </p>
+                <p class="text-[#FF8127]">5.0</p>
+              </div>
+
+              <div class="flex flex-col gap-3.5 max-w-[13rem]">
+                <div class="flex gap-3.5">
+                  <img src="images/users/user-pfp.png" 
+                  alt="">
+                  <div>
+                    <p class="text-[#ED1B23]">Ernest Smith</p>
+                    <p class="text-[#9D9CAF]">CEO at Ritmo</p>
+                  </div>
+                </div>
+                <p class="text-[#9D9CAF]">They are a partner with
+                  expertise in making trade
+                  shows effective.and they
+                  know what will be best
+                  </p>
+                <p class="text-[#FF8127]">5.0</p>
+              </div>
+
+              <div class="flex flex-col gap-3.5 max-w-[13rem]">
+                <div class="flex gap-3.5">
+                  <img src="images/users/user-pfp.png" 
+                  alt="">
+                  <div>
+                    <p class="text-[#ED1B23]">Ernest Smith</p>
+                    <p class="text-[#9D9CAF]">CEO at Ritmo</p>
+                  </div>
+                </div>
+                <p class="text-[#9D9CAF]">They are a partner with
+                  expertise in making trade
+                  shows effective.and they
+                  know what will be best
+                  </p>
+                <p class="text-[#FF8127]">5.0</p>
+              </div>
             </div>
-        </div>
-    </div>
 
 
-</div>
-
-<div class="flex justify-center gap-5 mt-10">
-    <img src="images/icons/activated-user-review.svg" alt="Review section 1">
-    <img src="images/icons/user-review.svg" alt="Review section 2">
-    <img src="images/icons/user-review.svg" alt="Review section 3">
-    <img src="images/icons/user-review.svg" alt="Review section 4">
-    <img src="images/icons/user-review.svg" alt="Review section 5">
-    <img src="images/icons/user-review.svg" alt="Review section 6">
-</div>
-
-</section>
-
-
-<section>
-<div class="bg-[url('images/backgrounds/footer-background.png')] bg-cover py-20">
-
-<div class="max-w-2xl m-auto">
-    <h1 class="text-5xl font-extrabold text-[#F9F9FB] leading-[3.5rem] text-center header-h1">Welcome to the world of Style and Luxury</h1>
-    <p class="text-xl text-[#F9F9FB] text-center py-6">Bant d.o.o. company was founded in 1994. and is leading company for decoration of your living space.</p>
-    <div class="flex justify-center">
-        <button class="bg-white font-bold text-[#ED1B23] py-3.5 px-14 "><a href="">Buy Now</a></button>
-    </div>
-</div>
-
-</div>
-
-</section>
-
-<footer class="bg-[#0D0D0D] text-white px-16">
-
-    <div class="flex gap-32 pt-28 pb-16">
-        <div class="max-w-xs">
-            <img src="images/logos/footer-logo.png" alt="">
-            <p class="text-white mt-3">Making the world a better place through constructing elegant hierarchies</p>
-            <div class="flex gap-[1.25rem] mt-9">
-                <i class="fa-brands fa-facebook text-2xl" style="color: #ed1b23;"></i>
-                <i class="fa-brands fa-twitter text-2xl" style="color: #ed1b23;"></i>
-                <i class="fa-brands fa-instagram text-2xl" style="color: #ed1b23;"></i>
+            <div class="flex gap-6 justify-center mt-10">
+              <img src="images/icons/activated-user-review.svg" alt="">
+              <img src="images/icons/user-review.svg" alt="">
+              <img src="images/icons/user-review.svg" alt="">
+              <img src="images/icons/user-review.svg" alt="">
+              <img src="images/icons/user-review.svg" alt="">
+              <img src="images/icons/user-review.svg" alt="">
             </div>
+          </div> 
+
+          <div class="mt-10 py-20 flex justify-center bg-cover bg-[url('images/backgrounds/footer-background.png')]">
+          <div class="flex flex-col items-center max-w-[50rem] gap-4">
+          <p class="text-white text-center font-bold text-5xl">Welcome to the world of style and luxury</p>
+          <p class="text-white text-center text-2xl">Bant d.o.o. company was founded in 1994. and is leading company for
+            decoration of your living space.</p>
+            <button class="max-w-[12rem] bg-white font-bold text-red-500 px-14 py-4">Buy Now</button>
         </div>
+          </div>
+        
+          <div class="bg-[#0D0D0D] text-white px-20 pt-28">
+            <div class="flex justify-between pb-12">
+              <div class="flex flex-col max-w-[12rem] gap-6">
+              <img src="images/logos/footer-logo.png" alt="">
+              <p>Making the world a better place through constructing elegant hierarchies</p>
+              </div>
+              <div class="flex flex-col max-w-[12rem] gap-6">
+                <p class="text-xl">NAVIGATION</p>
+                <div class="">
+                  <p><a href="#">Home</a></p>
+                  <p><a href="#">About</a></p>
+                  <p><a href="#">News</a></p>
+                  <p><a href="#">Contact</a></p>
+                  <p><a href="#">Products</a></p>
+                </div>
+              </div>
+              <div class="flex flex-col max-w-[12rem] gap-6">
+                <p class="text-xl">LEGAL</p>
+                <div class="">
+                  <p>Legal declarations</p>
+                  <p>Privacy Policy</p>
+                  <p>Cookies policy</p>
+               
+                </div>
+              </div>
+              <div class="flex flex-col max-w-[12rem] gap-6">
+                <p class="text-xl">ADDRESS</p>
+                <div class="">
+                  <div class="flex gap-2.5">
+                    <img src="images/icons/location.svg" alt="">
+                    <p>PC 96, Vitez</p>
+                  </div>
+                   <div class="flex gap-2.5">
+                    <img src="images/icons/call.svg" alt="">
+                    <p>030-714-770</p>
+                  </div>
+                  <div class="flex gap-2.5">
+                    <img src="images/icons/call.svg" alt="">
+                    <p>030-717-505</p>
+                  </div>
+                   <div class="flex gap-2.5">
+                    <img src="images/icons/email.svg" alt="">
+                    <p>info@bant.ba</p>
+                  </div>
+               
+                </div>
+              </div>
+            </div>
 
-        <div>
-            <h6 class="text-sm font-medium tracking-widest">NAVIGATION</h6>
-            <ul class="flex flex-col gap-1 mt-6">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+            <hr />
 
-        <div>
-            <h6 class="text-sm font-medium tracking-widest">LEGAL</h6>
-            <ul class="flex flex-col gap-1 mt-6">
-                <li><a href="#">Legal declarations</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookies policy</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h6 class="text-sm font-medium tracking-widest">ADDRESS</h6>
-            <ul class="flex flex-col gap-3 mt-6">
-                <li class="flex gap-3"><img src="images/icons/location.svg" alt="Location"><a href="#">PC 96, Vitez</a></li>
-                <li class="flex gap-3"><img src="images/icons/call.svg" alt="Call"><a href="#">030-714-770</a></li>
-                <li class="flex gap-3"><img src="images/icons/call.svg" alt="Call-2"><a href="#">030-717-505</a></li>
-                <li class="flex gap-3"><img src="images/icons/email.svg" alt="Email"><a href="#">info@bant.ba</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h6 class="text-sm font-medium tracking-widest">ADDRESS</h6>
-            <ul class="flex flex-col gap-3 mt-6">
-                <li class="flex gap-3"><img src="images/icons/location.svg" alt="Location"><a href="#">PC 96, Vitez</a></li>
-                <li class="flex gap-3"><img src="images/icons/call.svg" alt="Call"><a href="#">030-714-770</a></li>
-                <li class="flex gap-3"><img src="images/icons/call.svg" alt="Call-2"><a href="#">030-717-505</a></li>
-                <li class="flex gap-3"><img src="images/icons/email.svg" alt="Email"><a href="#">info@bant.ba</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <hr>
-    <div class="py-8">
-        <p class="text-base text-center">Copyright © 20203. Bant keramika - All rights reserved</p>
-    </div>
-
-
-
-</footer>
-
-
- <script src="script.js"></script>   
+            <div class="text-center py-8">
+              <p>Copyright © 20203. Bant keramika - All rights reserve</p>
+            </div>
+          </div>
 </body>
 </html>
